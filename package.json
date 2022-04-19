@@ -1,0 +1,15 @@
+{
+  "name": "eslint-template-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TTiip/eslint-template-utils.git",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.20.6",
+    "eslint": "^8.13.0"
+  }
+}
