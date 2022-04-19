@@ -1,20 +1,4 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true
-  },
-  extends: [
-    '@antfu'
-  ],
-  parserOptions: {
-    ecmaVersion: 2020
-  },
-  globals: {
-    defineProps: 'readonly',
-    defineEmits: 'readonly',
-    defineExpose: 'readonly',
-    withDefaults: 'readonly'
-  },
   rules: {
     // 关闭 let 转换成 const
     'prefer-const': 'off',
