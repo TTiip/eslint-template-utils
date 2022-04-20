@@ -6,10 +6,10 @@
   import { ref } from 'vue'
 
   switch (a) {
-  case 'a':
-    break
-  case 'b':
-    break
+    case 'a':
+      break
+    case 'b':
+      break
   }
 
 </script>
