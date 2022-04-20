@@ -2,7 +2,7 @@ import {
   aa, bb, cc
 } from './exportTest'
 
-const a1 = (test) => {
+const a1 = test => {
   debugger
   console.log(test)
 }
