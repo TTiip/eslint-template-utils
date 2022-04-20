@@ -1,6 +1,8 @@
 module.exports = {
   extends: ['@antfu'],
   rules: {
+    // 参数尽在 需要 () 包裹 时才包裹
+    'arrow-parens': ['error', 'as-needed'],
     // 关闭 let 转换成 const
     'prefer-const': 'off',
     // 强制使用 两个字符 缩进
@@ -20,7 +22,9 @@ module.exports = {
         // 多个换行
         multiline: true,
         // 超过或等于这个数量就换行
-        minProperties: 1
+        minProperties: 1,
+        // 如果对象中属性注释或不存在属性换行不报错。
+        consistent: true
       },
       ObjectPattern: {
         multiline: true,
@@ -58,7 +62,12 @@ module.exports = {
     }],
     // script标签缩进设置
     'vue/script-indent': ['error', 2, {
-      baseIndent: 1
+      // 基础缩进 1 * 2
+      baseIndent: 1,
+      // switch 缩进 1 * 2
+      switchCase: 1,
+      // 忽略的节点
+      ignores: []
     }],
     // 逗号前面不要空格，后面必须空格
     'comma-spacing': [
