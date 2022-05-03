@@ -13,6 +13,8 @@ module.exports = {
     // 函数参数 不使用换行
     'function-paren-newline': ['error', 'never'],
     // 函数左括号前一定要加 空格
+    '@typescript-eslint/space-before-function-paren': ['error', 'always'],
+    // 函数左括号前一定要加 空格
     'space-before-function-paren': ['error', 'always'],
     // 当仅有一个判断的时候，必须使用 {} 包裹
     'curly': ['error', 'all'],
@@ -53,7 +55,7 @@ module.exports = {
     // 禁止使用特定的语法
     'no-restricted-syntax': 'off',
     // typescript 关闭逗号检测
-    '@typescript-eslint/comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': ['error', 'never'],
     // 关闭缩进检测
     '@typescript-eslint/indent': 'off',
     // {} 括号和 else 换行风格。
