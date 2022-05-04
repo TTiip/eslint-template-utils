@@ -19,28 +19,28 @@ module.exports = {
     // 当仅有一个判断的时候，必须使用 {} 包裹
     'curly': ['error', 'all'],
     // 花括号是不是换行
-    'object-curly-newline': ['error', {
-      ObjectExpression: {
-        // 多个换行
-        multiline: true,
-        // 超过或等于这个数量就换行
-        minProperties: 1,
-        // 如果对象中属性注释或不存在属性换行不报错。
-        consistent: true
-      },
-      ObjectPattern: {
-        multiline: true,
-        minProperties: 1
-      },
-      ImportDeclaration: {
-        multiline: true,
-        minProperties: 2
-      },
-      ExportDeclaration: {
-        multiline: true,
-        minProperties: 2
-      }
-    }],
+    // 'object-curly-newline': ['off', {
+    //   ObjectExpression: {
+    //     // 多个换行
+    //     multiline: true,
+    //     // 超过或等于这个数量就换行
+    //     minProperties: 1,
+    //     // 如果对象中属性注释或不存在属性换行不报错。
+    //     consistent: true
+    //   },
+    //   ObjectPattern: {
+    //     multiline: true,
+    //     minProperties: 1
+    //   },
+    //   ImportDeclaration: {
+    //     multiline: true,
+    //     minProperties: 3
+    //   },
+    //   ExportDeclaration: {
+    //     multiline: true,
+    //     minProperties: 2
+    //   }
+    // }],
     // 强制将对象的属性放在不同的行上
     'object-property-newline': ['error', {
       // 对象属性放在同一行(true 不换行) 但是不知道为什么不生效。。。
