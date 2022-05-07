@@ -19,7 +19,7 @@ module.exports = {
     // 当仅有一个判断的时候，必须使用 {} 包裹
     'curly': ['error', 'all'],
     // 花括号是不是换行
-    // 'object-curly-newline': ['off', {
+    // 'object-curly-newline': ['error', {
     //   ObjectExpression: {
     //     // 多个换行
     //     multiline: true,
@@ -34,7 +34,7 @@ module.exports = {
     //   },
     //   ImportDeclaration: {
     //     multiline: true,
-    //     minProperties: 3
+    //     minProperties: 2
     //   },
     //   ExportDeclaration: {
     //     multiline: true,
@@ -42,10 +42,10 @@ module.exports = {
     //   }
     // }],
     // 强制将对象的属性放在不同的行上
-    'object-property-newline': ['error', {
-      // 对象属性放在同一行(true 不换行) 但是不知道为什么不生效。。。
-      allowAllPropertiesOnSameLine: false
-    }],
+    // 'object-property-newline': ['error', {
+    //   // 对象属性放在同一行(true 不换行) 但是不知道为什么不生效。。。
+    //   allowAllPropertiesOnSameLine: false
+    // }],
     // 不允许使用tab缩进
     'no-tabs': 'off',
     // 不允许使用 console
